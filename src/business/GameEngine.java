@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import ui.GUI;
 import ui.UI;
 
 /**
@@ -40,6 +41,8 @@ public class GameEngine {
     
     
     public static void setUp(){
+        //set UI
+        ui = new GUI();
         //set players
         player1.setFaction("Red");
         player2.setFaction("Blue");
@@ -59,7 +62,6 @@ public class GameEngine {
         map.put("Orinoquia", RegionFactory.setUpOrinoquiaRegion());
         map.put("Andina", RegionFactory.setUpAndinaRegion());
         map.put("Pacifica", RegionFactory.setUpPacificoRegion());
-        map.put("Insular", RegionFactory.setUpInsularRegion());
         
     }
     
@@ -68,7 +70,6 @@ public class GameEngine {
         allDepartments.addAll(map.get("Caribe").getDepartments().values());
         allDepartments.addAll(map.get("Orinoquia").getDepartments().values());
         allDepartments.addAll(map.get("Andina").getDepartments().values());
-        allDepartments.addAll(map.get("Insular").getDepartments().values());
         allDepartments.addAll(map.get("Pacifica").getDepartments().values());
     }
    

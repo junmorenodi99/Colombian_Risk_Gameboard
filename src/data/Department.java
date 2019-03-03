@@ -8,6 +8,7 @@ package data;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import javax.swing.JButton;
 
 /**
  *
@@ -19,11 +20,10 @@ public class Department {
     private String name;
     private HashMap<String,Department> neighbours;
     private List<Unit> units;
-    private String imageRoute;
+    private JButton uiButton;
 
-    public Department(String name, String imageRoute) {
+    public Department(String name) {
         this.name = name;
-        this.imageRoute = imageRoute;
         this.neighbours = new HashMap<>();
         this.units = new ArrayList<>();
     }
@@ -53,13 +53,15 @@ public class Department {
         this.units = units;
     }
 
-    public String getImageRoute() {
-        return imageRoute;
+    public JButton getUiButton() {
+        return uiButton;
     }
 
-    public void setImageRoute(String imageRoute) {
-        this.imageRoute = imageRoute;
+    public void setUiButton(JButton uiButton) {
+        this.uiButton = uiButton;
     }
+
+    
 
     public HashMap<String, Department> getNeighbours() {
         return neighbours;
