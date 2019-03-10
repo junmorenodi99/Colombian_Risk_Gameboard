@@ -25,30 +25,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="209" max="-2" attributes="0"/>
-                  <Component id="guajira" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="408" max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="guajira" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="620" max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="640" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JButton" name="guajira">
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="guajira.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guajira.setContentAreaFilled(false);&#xa;guajira.setPreferredSize(new Dimension(30,30));&#xa;guajira.setBorderPainted(false);"/>
-          </AuxValues>
-        </Component>
-      </SubComponents>
     </Container>
   </NonVisualComponents>
   <Properties>
@@ -73,13 +58,426 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="37" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="caldas" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cundinamarca" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="narinio" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="tolima" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="arauca" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cauca" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="huila" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="quindio" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="vichada" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="bolivar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="choco" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="magdalena" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="san_andres" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="atlantico" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cesar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="guajira" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="risaralda" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="santander" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="boyaca" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cordoba" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="meta" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="sucre" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="amazonas" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="caqueta" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="guania" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="norte_santander" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="antioquia" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="casanare" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="guaviare" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="putumayo" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="valle_cauca" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="vaupes" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="Set" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="amazonas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="caqueta" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="guania" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="norte_santander" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="valle_cauca" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="antioquia" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="casanare" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="guaviare" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="putumayo" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="vaupes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="Set" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="arauca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cauca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="huila" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="quindio" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="vichada" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="atlantico" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="risaralda" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cesar" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="guajira" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="santander" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="bolivar" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="choco" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="san_andres" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="magdalena" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="boyaca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cordoba" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meta" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sucre" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="caldas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cundinamarca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="narinio" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tolima" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="Set">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Set"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="guania">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="guania"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="guania.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guania.setContentAreaFilled(false);&#xa;guania.setPreferredSize(new Dimension(15,15));&#xa;guania.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="guaviare">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="guaviare"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="guaviare.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guaviare.setContentAreaFilled(false);&#xa;guaviare.setPreferredSize(new Dimension(15,15));&#xa;guaviare.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="huila">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="huila"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="huila.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;huila.setContentAreaFilled(false);&#xa;huila.setPreferredSize(new Dimension(15,15));&#xa;huila.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="meta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="meta"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="meta.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;meta.setContentAreaFilled(false);&#xa;meta.setPreferredSize(new Dimension(15,15));&#xa;meta.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="narinio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="narinio"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="narinio.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;narinio.setContentAreaFilled(false);&#xa;narinio.setPreferredSize(new Dimension(15,15));&#xa;narinio.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="norte_santander">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="norte santander"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="norte_santander.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;norte_santander.setContentAreaFilled(false);&#xa;norte_santander.setPreferredSize(new Dimension(15,15));&#xa;norte_santander.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="putumayo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="putumayo"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="putumayo.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;putumayo.setContentAreaFilled(false);&#xa;putumayo.setPreferredSize(new Dimension(15,15));&#xa;putumayo.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="quindio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="quindio"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="quindio.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;quindio.setContentAreaFilled(false);&#xa;quindio.setPreferredSize(new Dimension(15,15));&#xa;quindio.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="atlantico">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="atlantico"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="atlantico.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;atlantico.setContentAreaFilled(false);&#xa;atlantico.setPreferredSize(new Dimension(15,15));&#xa;atlantico.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="risaralda">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="risaralda"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="risaralda.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;risaralda.setContentAreaFilled(false);&#xa;risaralda.setPreferredSize(new Dimension(15,15));&#xa;risaralda.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="caqueta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="caqueta"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="caqueta.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;caqueta.setContentAreaFilled(false);&#xa;caqueta.setPreferredSize(new Dimension(15,15));&#xa;caqueta.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="san_andres">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="san andres"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="san_andres.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;san_andres.setContentAreaFilled(false);&#xa;san_andres.setPreferredSize(new Dimension(15,15));&#xa;san_andres.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="arauca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="arauca"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="arauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;arauca.setContentAreaFilled(false);&#xa;arauca.setPreferredSize(new Dimension(15,15));&#xa;arauca.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="sucre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="sucre"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="sucre.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;sucre.setContentAreaFilled(false);&#xa;sucre.setPreferredSize(new Dimension(15,15));&#xa;sucre.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bolivar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="bolivar"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="bolivar.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;bolivar.setContentAreaFilled(false);&#xa;bolivar.setPreferredSize(new Dimension(15,15));&#xa;bolivar.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="tolima">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="tolima"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="tolima.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;tolima.setContentAreaFilled(false);&#xa;tolima.setPreferredSize(new Dimension(15,15));&#xa;tolima.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="boyaca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="boyaca"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="boyaca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;boyaca.setContentAreaFilled(false);&#xa;boyaca.setPreferredSize(new Dimension(15,15));&#xa;boyaca.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="valle_cauca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="valle del cauca"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="valle_cauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;valle_cauca.setContentAreaFilled(false);&#xa;valle_cauca.setPreferredSize(new Dimension(15,15));&#xa;valle_cauca.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="caldas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="caldas"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="caldas.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;caldas.setContentAreaFilled(false);&#xa;caldas.setPreferredSize(new Dimension(15,15));&#xa;caldas.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="vaupes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="vaupes"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="vaupes.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;vaupes.setContentAreaFilled(false);&#xa;vaupes.setPreferredSize(new Dimension(15,15));&#xa;vaupes.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="casanare">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="casanare"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="casanare.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;casanare.setContentAreaFilled(false);&#xa;casanare.setPreferredSize(new Dimension(15,15));&#xa;casanare.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="vichada">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="vichada"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="vichada.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;vichada.setContentAreaFilled(false);&#xa;vichada.setPreferredSize(new Dimension(15,15));&#xa;vichada.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cauca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="cauca"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cauca.setContentAreaFilled(false);&#xa;cauca.setPreferredSize(new Dimension(15,15));&#xa;cauca.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="santander">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="santader"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="santander.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;santander.setContentAreaFilled(false);&#xa;santander.setPreferredSize(new Dimension(15,15));&#xa;santander.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="choco">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="choco"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="choco.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;choco.setContentAreaFilled(false);&#xa;choco.setPreferredSize(new Dimension(15,15));&#xa;choco.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="guajira">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="guajira"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="guajira.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guajira.setContentAreaFilled(false);&#xa;guajira.setPreferredSize(new Dimension(15,15));&#xa;guajira.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="magdalena">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="magdalena"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="magdalena.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;magdalena.setContentAreaFilled(false);&#xa;magdalena.setPreferredSize(new Dimension(15,15));&#xa;magdalena.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cesar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="cesar"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cesar.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cesar.setContentAreaFilled(false);&#xa;cesar.setPreferredSize(new Dimension(15,15));&#xa;cesar.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="amazonas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="amazonas"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="amazonas.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;amazonas.setContentAreaFilled(false);&#xa;amazonas.setPreferredSize(new Dimension(30,30));&#xa;amazonas.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="antioquia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="antioquia"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="antioquia.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;antioquia.setContentAreaFilled(false);&#xa;antioquia.setPreferredSize(new Dimension(15,15));&#xa;antioquia.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cordoba">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="cordoba"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cordoba.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cordoba.setContentAreaFilled(false);&#xa;cordoba.setPreferredSize(new Dimension(15,15));&#xa;cordoba.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="cundinamarca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="cundinamarca"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cundinamarca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cundinamarca.setContentAreaFilled(false);&#xa;cundinamarca.setPreferredSize(new Dimension(15,15));&#xa;cundinamarca.setBorderPainted(false);"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
 </Form>

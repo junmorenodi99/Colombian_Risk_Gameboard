@@ -42,12 +42,10 @@ public class GUI extends javax.swing.JFrame implements UI{
         initComponents();
         //custom componenets
  
-        
-        
         MapPanel colombiaMap = new MapPanel();
         this.add(colombiaMap);
-        colombiaMap.setBounds(0, 0, 650, 640);
-        this.setSize(690, 690);
+        colombiaMap.setBounds(0, 0, 478, 640);
+        this.setSize(800, 800);
         colombiaMap.setVisible(true);
         colombiaMap.add(scenaryPanel);
         this.repaint();
@@ -66,7 +64,39 @@ public class GUI extends javax.swing.JFrame implements UI{
 
         mainMenuPanel = new javax.swing.JPanel();
         scenaryPanel = new javax.swing.JPanel();
+        Set = new javax.swing.JButton();
+        guania = new javax.swing.JButton();
+        guaviare = new javax.swing.JButton();
+        huila = new javax.swing.JButton();
+        meta = new javax.swing.JButton();
+        narinio = new javax.swing.JButton();
+        norte_santander = new javax.swing.JButton();
+        putumayo = new javax.swing.JButton();
+        quindio = new javax.swing.JButton();
+        atlantico = new javax.swing.JButton();
+        risaralda = new javax.swing.JButton();
+        caqueta = new javax.swing.JButton();
+        san_andres = new javax.swing.JButton();
+        arauca = new javax.swing.JButton();
+        sucre = new javax.swing.JButton();
+        bolivar = new javax.swing.JButton();
+        tolima = new javax.swing.JButton();
+        boyaca = new javax.swing.JButton();
+        valle_cauca = new javax.swing.JButton();
+        caldas = new javax.swing.JButton();
+        vaupes = new javax.swing.JButton();
+        casanare = new javax.swing.JButton();
+        vichada = new javax.swing.JButton();
+        cauca = new javax.swing.JButton();
+        santander = new javax.swing.JButton();
+        choco = new javax.swing.JButton();
         guajira = new javax.swing.JButton();
+        magdalena = new javax.swing.JButton();
+        cesar = new javax.swing.JButton();
+        amazonas = new javax.swing.JButton();
+        antioquia = new javax.swing.JButton();
+        cordoba = new javax.swing.JButton();
+        cundinamarca = new javax.swing.JButton();
 
         javax.swing.GroupLayout mainMenuPanelLayout = new javax.swing.GroupLayout(mainMenuPanel);
         mainMenuPanel.setLayout(mainMenuPanelLayout);
@@ -81,43 +111,395 @@ public class GUI extends javax.swing.JFrame implements UI{
 
         scenaryPanel.setOpaque(false);
 
-        guajira.setIcon(new ImageIcon("src/resources/assets/target.png"));
-        guajira.setContentAreaFilled(false);
-        guajira.setPreferredSize(new Dimension(30,30));
-        guajira.setBorderPainted(false);
-
         javax.swing.GroupLayout scenaryPanelLayout = new javax.swing.GroupLayout(scenaryPanel);
         scenaryPanel.setLayout(scenaryPanelLayout);
         scenaryPanelLayout.setHorizontalGroup(
             scenaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(scenaryPanelLayout.createSequentialGroup()
-                .addGap(209, 209, 209)
-                .addComponent(guajira)
-                .addContainerGap(408, Short.MAX_VALUE))
+            .addGap(0, 650, Short.MAX_VALUE)
         );
         scenaryPanelLayout.setVerticalGroup(
             scenaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(scenaryPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(guajira)
-                .addContainerGap(620, Short.MAX_VALUE))
+            .addGap(0, 640, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Set.setText("Set");
+        Set.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SetActionPerformed(evt);
+            }
+        });
+
+        guania.setText("guania");
+        guania.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        guania.setContentAreaFilled(false);
+        guania.setPreferredSize(new Dimension(15,15));
+        guania.setBorderPainted(false);
+
+        guaviare.setText("guaviare");
+        guaviare.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        guaviare.setContentAreaFilled(false);
+        guaviare.setPreferredSize(new Dimension(15,15));
+        guaviare.setBorderPainted(false);
+
+        huila.setText("huila");
+        huila.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        huila.setContentAreaFilled(false);
+        huila.setPreferredSize(new Dimension(15,15));
+        huila.setBorderPainted(false);
+
+        meta.setText("meta");
+        meta.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        meta.setContentAreaFilled(false);
+        meta.setPreferredSize(new Dimension(15,15));
+        meta.setBorderPainted(false);
+
+        narinio.setText("narinio");
+        narinio.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        narinio.setContentAreaFilled(false);
+        narinio.setPreferredSize(new Dimension(15,15));
+        narinio.setBorderPainted(false);
+
+        norte_santander.setText("norte santander");
+        norte_santander.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        norte_santander.setContentAreaFilled(false);
+        norte_santander.setPreferredSize(new Dimension(15,15));
+        norte_santander.setBorderPainted(false);
+
+        putumayo.setText("putumayo");
+        putumayo.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        putumayo.setContentAreaFilled(false);
+        putumayo.setPreferredSize(new Dimension(15,15));
+        putumayo.setBorderPainted(false);
+
+        quindio.setText("quindio");
+        quindio.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        quindio.setContentAreaFilled(false);
+        quindio.setPreferredSize(new Dimension(15,15));
+        quindio.setBorderPainted(false);
+
+        atlantico.setText("atlantico");
+        atlantico.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        atlantico.setContentAreaFilled(false);
+        atlantico.setPreferredSize(new Dimension(15,15));
+        atlantico.setBorderPainted(false);
+
+        risaralda.setText("risaralda");
+        risaralda.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        risaralda.setContentAreaFilled(false);
+        risaralda.setPreferredSize(new Dimension(15,15));
+        risaralda.setBorderPainted(false);
+
+        caqueta.setText("caqueta");
+        caqueta.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        caqueta.setContentAreaFilled(false);
+        caqueta.setPreferredSize(new Dimension(15,15));
+        caqueta.setBorderPainted(false);
+
+        san_andres.setText("san andres");
+        san_andres.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        san_andres.setContentAreaFilled(false);
+        san_andres.setPreferredSize(new Dimension(15,15));
+        san_andres.setBorderPainted(false);
+
+        arauca.setText("arauca");
+        arauca.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        arauca.setContentAreaFilled(false);
+        arauca.setPreferredSize(new Dimension(15,15));
+        arauca.setBorderPainted(false);
+
+        sucre.setText("sucre");
+        sucre.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        sucre.setContentAreaFilled(false);
+        sucre.setPreferredSize(new Dimension(15,15));
+        sucre.setBorderPainted(false);
+
+        bolivar.setText("bolivar");
+        bolivar.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        bolivar.setContentAreaFilled(false);
+        bolivar.setPreferredSize(new Dimension(15,15));
+        bolivar.setBorderPainted(false);
+
+        tolima.setText("tolima");
+        tolima.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        tolima.setContentAreaFilled(false);
+        tolima.setPreferredSize(new Dimension(15,15));
+        tolima.setBorderPainted(false);
+
+        boyaca.setText("boyaca");
+        boyaca.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        boyaca.setContentAreaFilled(false);
+        boyaca.setPreferredSize(new Dimension(15,15));
+        boyaca.setBorderPainted(false);
+
+        valle_cauca.setText("valle del cauca");
+        valle_cauca.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        valle_cauca.setContentAreaFilled(false);
+        valle_cauca.setPreferredSize(new Dimension(15,15));
+        valle_cauca.setBorderPainted(false);
+
+        caldas.setText("caldas");
+        caldas.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        caldas.setContentAreaFilled(false);
+        caldas.setPreferredSize(new Dimension(15,15));
+        caldas.setBorderPainted(false);
+
+        vaupes.setText("vaupes");
+        vaupes.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        vaupes.setContentAreaFilled(false);
+        vaupes.setPreferredSize(new Dimension(15,15));
+        vaupes.setBorderPainted(false);
+
+        casanare.setText("casanare");
+        casanare.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        casanare.setContentAreaFilled(false);
+        casanare.setPreferredSize(new Dimension(15,15));
+        casanare.setBorderPainted(false);
+
+        vichada.setText("vichada");
+        vichada.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        vichada.setContentAreaFilled(false);
+        vichada.setPreferredSize(new Dimension(15,15));
+        vichada.setBorderPainted(false);
+
+        cauca.setText("cauca");
+        cauca.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        cauca.setContentAreaFilled(false);
+        cauca.setPreferredSize(new Dimension(15,15));
+        cauca.setBorderPainted(false);
+
+        santander.setText("santader");
+        santander.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        santander.setContentAreaFilled(false);
+        santander.setPreferredSize(new Dimension(15,15));
+        santander.setBorderPainted(false);
+
+        choco.setText("choco");
+        choco.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        choco.setContentAreaFilled(false);
+        choco.setPreferredSize(new Dimension(15,15));
+        choco.setBorderPainted(false);
+
+        guajira.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        guajira.setContentAreaFilled(false);
+        guajira.setPreferredSize(new Dimension(15,15));
+        guajira.setBorderPainted(false);
+        guajira.setText("guajira");
+
+        magdalena.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        magdalena.setContentAreaFilled(false);
+        magdalena.setPreferredSize(new Dimension(15,15));
+        magdalena.setBorderPainted(false);
+        magdalena.setText("magdalena");
+
+        cesar.setText("cesar");
+        cesar.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        cesar.setContentAreaFilled(false);
+        cesar.setPreferredSize(new Dimension(15,15));
+        cesar.setBorderPainted(false);
+
+        amazonas.setText("amazonas");
+        amazonas.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        amazonas.setContentAreaFilled(false);
+        amazonas.setPreferredSize(new Dimension(30,30));
+        amazonas.setBorderPainted(false);
+
+        antioquia.setText("antioquia");
+        antioquia.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        antioquia.setContentAreaFilled(false);
+        antioquia.setPreferredSize(new Dimension(15,15));
+        antioquia.setBorderPainted(false);
+
+        cordoba.setText("cordoba");
+        cordoba.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        cordoba.setContentAreaFilled(false);
+        cordoba.setPreferredSize(new Dimension(15,15));
+        cordoba.setBorderPainted(false);
+
+        cundinamarca.setText("cundinamarca");
+        cundinamarca.setIcon(new ImageIcon("src/resources/assets/target.png"));
+        cundinamarca.setContentAreaFilled(false);
+        cundinamarca.setPreferredSize(new Dimension(15,15));
+        cundinamarca.setBorderPainted(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(37, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(caldas)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cundinamarca)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(narinio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tolima))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(arauca)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cauca)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(huila)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(quindio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(vichada))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(bolivar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(choco)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(magdalena)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(san_andres))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(atlantico)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cesar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(guajira)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(risaralda)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(santander))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(boyaca)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cordoba)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(meta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(sucre))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(amazonas)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(caqueta)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(guania)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(norte_santander))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(antioquia)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(casanare)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(guaviare)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(putumayo)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(valle_cauca)
+                            .addComponent(vaupes))
+                        .addGap(18, 18, 18)
+                        .addComponent(Set)))
+                .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {amazonas, antioquia, arauca, atlantico, bolivar, boyaca, caldas, caqueta, casanare, cauca, cesar, choco, cordoba, cundinamarca, guajira, guania, guaviare, huila, magdalena, meta, narinio, norte_santander, putumayo, quindio, risaralda, san_andres, santander, sucre, tolima, valle_cauca, vaupes, vichada});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(23, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(amazonas)
+                            .addComponent(caqueta)
+                            .addComponent(guania)
+                            .addComponent(norte_santander)
+                            .addComponent(valle_cauca))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(antioquia)
+                            .addComponent(casanare)
+                            .addComponent(guaviare)
+                            .addComponent(putumayo)
+                            .addComponent(vaupes))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(Set)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(arauca)
+                    .addComponent(cauca)
+                    .addComponent(huila)
+                    .addComponent(quindio)
+                    .addComponent(vichada))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(atlantico)
+                    .addComponent(risaralda)
+                    .addComponent(cesar)
+                    .addComponent(guajira)
+                    .addComponent(santander))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bolivar)
+                    .addComponent(choco)
+                    .addComponent(san_andres)
+                    .addComponent(magdalena))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(boyaca)
+                    .addComponent(cordoba)
+                    .addComponent(meta)
+                    .addComponent(sucre))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caldas)
+                    .addComponent(cundinamarca)
+                    .addComponent(narinio)
+                    .addComponent(tolima))
+                .addGap(80, 80, 80))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {amazonas, antioquia, arauca, atlantico, bolivar, boyaca, caldas, caqueta, casanare, cauca, cesar, choco, cordoba, cundinamarca, guajira, guania, guaviare, huila, magdalena, meta, narinio, norte_santander, putumayo, quindio, risaralda, san_andres, sucre, tolima});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void SetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetActionPerformed
+        amazonas.setLocation(273,513);
+        antioquia.setLocation(129,213);
+        arauca.setLocation(280,208);
+        atlantico.setLocation(155,57);
+        bolivar.setLocation(180,144);
+        boyaca.setLocation(217,260);
+        caldas.setLocation(137,264);
+        caqueta.setLocation(170,419);
+        casanare.setLocation(272,261);
+        cauca.setLocation(69,365);
+        cesar.setLocation(207,90);
+        choco.setLocation(78,249);
+        cordoba.setLocation(115,154);
+        cundinamarca.setLocation(178,278);
+        guania.setLocation(370,359);
+        guaviare.setLocation(246,388);
+        huila.setLocation(128,358);
+        guajira.setLocation(238,41);
+        magdalena.setLocation(179,64);
+        meta.setLocation(214,330);
+        narinio.setLocation(31,401);
+        norte_santander.setLocation(226,147);
+        putumayo.setLocation(89,435);
+        quindio.setLocation(123,291);
+        risaralda.setLocation(113,268);
+        san_andres.setLocation(29,25);
+        santander.setLocation(208,211);
+        sucre.setLocation(150,127);
+        tolima.setLocation(136,317);
+        valle_cauca.setLocation(81,326);
+        vaupes.setLocation(307,427);
+        vichada.setLocation(351,281);
+    }//GEN-LAST:event_SetActionPerformed
 
 
     @Override
@@ -146,9 +528,41 @@ public class GUI extends javax.swing.JFrame implements UI{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Set;
+    private javax.swing.JButton amazonas;
+    private javax.swing.JButton antioquia;
+    private javax.swing.JButton arauca;
+    private javax.swing.JButton atlantico;
+    private javax.swing.JButton bolivar;
+    private javax.swing.JButton boyaca;
+    private javax.swing.JButton caldas;
+    private javax.swing.JButton caqueta;
+    private javax.swing.JButton casanare;
+    private javax.swing.JButton cauca;
+    private javax.swing.JButton cesar;
+    private javax.swing.JButton choco;
+    private javax.swing.JButton cordoba;
+    private javax.swing.JButton cundinamarca;
     private javax.swing.JButton guajira;
+    private javax.swing.JButton guania;
+    private javax.swing.JButton guaviare;
+    private javax.swing.JButton huila;
+    private javax.swing.JButton magdalena;
     private javax.swing.JPanel mainMenuPanel;
+    private javax.swing.JButton meta;
+    private javax.swing.JButton narinio;
+    private javax.swing.JButton norte_santander;
+    private javax.swing.JButton putumayo;
+    private javax.swing.JButton quindio;
+    private javax.swing.JButton risaralda;
+    private javax.swing.JButton san_andres;
+    private javax.swing.JButton santander;
     private javax.swing.JPanel scenaryPanel;
+    private javax.swing.JButton sucre;
+    private javax.swing.JButton tolima;
+    private javax.swing.JButton valle_cauca;
+    private javax.swing.JButton vaupes;
+    private javax.swing.JButton vichada;
     // End of variables declaration//GEN-END:variables
 
     
