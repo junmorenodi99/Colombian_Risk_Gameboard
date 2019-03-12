@@ -5,6 +5,7 @@
  */
 package data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,15 +13,21 @@ import java.util.List;
  * @author Nicolás Moreno
  */
 public class Player {
-    private List<Department> occupedCountries;
-    private List<Unit> ownedUnits;
+    private ArrayList<Department> occupedCountries;
+    private ArrayList<Unit> ownedUnits;
     private String faction;
+    private Integer avaliableArmies;
+    
+    public Player(){
+        this.occupedCountries = new ArrayList<>();
+        this.ownedUnits = new ArrayList<>();
+    }
 
-    public List<Department> getOccupedCountries() {
+    public ArrayList<Department> getOccupedCountries() {
         return occupedCountries;
     }
 
-    public void setOccupedCountries(List<Department> occupedCountries) {
+    public void setOccupedCountries(ArrayList<Department> occupedCountries) {
         this.occupedCountries = occupedCountries;
     }
 
@@ -28,7 +35,7 @@ public class Player {
         return ownedUnits;
     }
 
-    public void setOwnedUnits(List<Unit> ownedUnits) {
+    public void setOwnedUnits(ArrayList<Unit> ownedUnits) {
         this.ownedUnits = ownedUnits;
     }
 
@@ -39,8 +46,16 @@ public class Player {
     public void setFaction(String faction) {
         this.faction = faction;
     }
+
+    public Integer getAvaliableArmies() {
+        return avaliableArmies;
+    }
+
+    public void setAvaliableArmies(Integer avaliableArmies) {
+        this.avaliableArmies = avaliableArmies;
+    }
     
-    
+     
     
     
 }

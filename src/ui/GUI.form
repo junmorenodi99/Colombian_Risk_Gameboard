@@ -1,39 +1,531 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Container class="javax.swing.JPanel" name="mainMenuPanel">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="399" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="189" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
     </Container>
     <Container class="javax.swing.JPanel" name="scenaryPanel">
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="scenaryPanel.setOpaque(false);"/>
-      </AuxValues>
+      <Properties>
+        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[600, 750]"/>
+        </Property>
+      </Properties>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="640" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="infoPanel">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="cc" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="460" y="0" width="180" height="630"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jPanel2" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                          <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel1">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="SONumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="CANumberLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="TANumberLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="dArmyLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                                  <Component id="dOwnerLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                  <Component id="dNameLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="dNameLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="9" max="32767" attributes="0"/>
+                          <Component id="dOwnerLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dArmyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="SONumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CANumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TANumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Departamento"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Alineacion:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ejercitos:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dOwnerLabel">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dArmyLabel">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SO"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel7">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CA"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel8">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="TA"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="SONumberLabel">
+                </Component>
+                <Component class="javax.swing.JLabel" name="CANumberLabel">
+                </Component>
+                <Component class="javax.swing.JLabel" name="TANumberLabel">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dNameLabel">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" alignment="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" pref="132" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Territorios Conquistados"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="oTerritoriesLabel">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="oTerritoriesLabel.setEditable(false);"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel3">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="attackButton" min="-2" pref="92" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                          <Component id="endTurnButton" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="putUnitButton" min="-2" pref="144" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="attackButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="putUnitButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="endTurnButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="80" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Acciones"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="attackButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Atacar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="attackButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="actionButtons.add(attackButton);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="putUnitButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Colocar Tropas"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="putUnitButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="actionButtons.add(putUnitButton);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="endTurnButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Finalizar Turno"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="endTurnButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="actionButtons.add(endTurnButton);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="actionPanel">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="66" red="cc" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="640" width="640" height="80"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="factionNameLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="factionLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="unitPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="113" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel4" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="unitPanel" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="factionNameLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="factionLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="30" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="factionNameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Turno de Faccion:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="factionLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel9"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="nAvaliableArmiesLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="31" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="nAvaliableArmiesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel9">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ejercitos Disponibles:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="nAvaliableArmiesLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="jLabel11"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="unitPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="putSoldierButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="putTankButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="putHorseButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="putSoldierButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="putHorseButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="putTankButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="putSoldierButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Grande" size="10" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="SO"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="putSoldierButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="unitButtons.add(putSoldierButton);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="putHorseButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Grande" size="10" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="CA"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="putHorseButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="unitButtons.add(putHorseButton);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="putTankButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Grande" size="10" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="TA"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="putTankButtonActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="unitButtons.add(putTankButton);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
     </Container>
   </NonVisualComponents>
   <Properties>
@@ -58,426 +550,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="37" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="caldas" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cundinamarca" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="narinio" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="tolima" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="arauca" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cauca" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="huila" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="quindio" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="vichada" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="bolivar" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="choco" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="magdalena" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="san_andres" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="atlantico" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cesar" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="guajira" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="risaralda" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="santander" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="boyaca" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cordoba" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="meta" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="sucre" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="amazonas" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="caqueta" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="guania" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="norte_santander" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="antioquia" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="casanare" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="guaviare" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="putumayo" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="valle_cauca" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="vaupes" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="Set" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="608" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace pref="23" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="amazonas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="caqueta" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="guania" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="norte_santander" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="valle_cauca" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="antioquia" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="casanare" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="guaviare" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="putumayo" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="vaupes" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="Set" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="arauca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cauca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="huila" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="quindio" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="vichada" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="atlantico" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="risaralda" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cesar" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="guajira" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="santander" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="bolivar" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="choco" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="san_andres" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="magdalena" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boyaca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cordoba" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="meta" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="sucre" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="caldas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cundinamarca" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="narinio" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tolima" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="511" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
-  <SubComponents>
-    <Component class="javax.swing.JButton" name="Set">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Set"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="guania">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="guania"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="guania.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guania.setContentAreaFilled(false);&#xa;guania.setPreferredSize(new Dimension(15,15));&#xa;guania.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="guaviare">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="guaviare"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="guaviare.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guaviare.setContentAreaFilled(false);&#xa;guaviare.setPreferredSize(new Dimension(15,15));&#xa;guaviare.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="huila">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="huila"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="huila.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;huila.setContentAreaFilled(false);&#xa;huila.setPreferredSize(new Dimension(15,15));&#xa;huila.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="meta">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="meta"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="meta.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;meta.setContentAreaFilled(false);&#xa;meta.setPreferredSize(new Dimension(15,15));&#xa;meta.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="narinio">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="narinio"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="narinio.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;narinio.setContentAreaFilled(false);&#xa;narinio.setPreferredSize(new Dimension(15,15));&#xa;narinio.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="norte_santander">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="norte santander"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="norte_santander.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;norte_santander.setContentAreaFilled(false);&#xa;norte_santander.setPreferredSize(new Dimension(15,15));&#xa;norte_santander.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="putumayo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="putumayo"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="putumayo.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;putumayo.setContentAreaFilled(false);&#xa;putumayo.setPreferredSize(new Dimension(15,15));&#xa;putumayo.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="quindio">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="quindio"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="quindio.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;quindio.setContentAreaFilled(false);&#xa;quindio.setPreferredSize(new Dimension(15,15));&#xa;quindio.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="atlantico">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="atlantico"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="atlantico.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;atlantico.setContentAreaFilled(false);&#xa;atlantico.setPreferredSize(new Dimension(15,15));&#xa;atlantico.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="risaralda">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="risaralda"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="risaralda.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;risaralda.setContentAreaFilled(false);&#xa;risaralda.setPreferredSize(new Dimension(15,15));&#xa;risaralda.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="caqueta">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="caqueta"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="caqueta.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;caqueta.setContentAreaFilled(false);&#xa;caqueta.setPreferredSize(new Dimension(15,15));&#xa;caqueta.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="san_andres">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="san andres"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="san_andres.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;san_andres.setContentAreaFilled(false);&#xa;san_andres.setPreferredSize(new Dimension(15,15));&#xa;san_andres.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="arauca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="arauca"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="arauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;arauca.setContentAreaFilled(false);&#xa;arauca.setPreferredSize(new Dimension(15,15));&#xa;arauca.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="sucre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="sucre"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="sucre.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;sucre.setContentAreaFilled(false);&#xa;sucre.setPreferredSize(new Dimension(15,15));&#xa;sucre.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="bolivar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="bolivar"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="bolivar.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;bolivar.setContentAreaFilled(false);&#xa;bolivar.setPreferredSize(new Dimension(15,15));&#xa;bolivar.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="tolima">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="tolima"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="tolima.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;tolima.setContentAreaFilled(false);&#xa;tolima.setPreferredSize(new Dimension(15,15));&#xa;tolima.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="boyaca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="boyaca"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="boyaca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;boyaca.setContentAreaFilled(false);&#xa;boyaca.setPreferredSize(new Dimension(15,15));&#xa;boyaca.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="valle_cauca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="valle del cauca"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="valle_cauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;valle_cauca.setContentAreaFilled(false);&#xa;valle_cauca.setPreferredSize(new Dimension(15,15));&#xa;valle_cauca.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="caldas">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="caldas"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="caldas.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;caldas.setContentAreaFilled(false);&#xa;caldas.setPreferredSize(new Dimension(15,15));&#xa;caldas.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="vaupes">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="vaupes"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="vaupes.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;vaupes.setContentAreaFilled(false);&#xa;vaupes.setPreferredSize(new Dimension(15,15));&#xa;vaupes.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="casanare">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="casanare"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="casanare.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;casanare.setContentAreaFilled(false);&#xa;casanare.setPreferredSize(new Dimension(15,15));&#xa;casanare.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="vichada">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="vichada"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="vichada.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;vichada.setContentAreaFilled(false);&#xa;vichada.setPreferredSize(new Dimension(15,15));&#xa;vichada.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="cauca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="cauca"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cauca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cauca.setContentAreaFilled(false);&#xa;cauca.setPreferredSize(new Dimension(15,15));&#xa;cauca.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="santander">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="santader"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="santander.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;santander.setContentAreaFilled(false);&#xa;santander.setPreferredSize(new Dimension(15,15));&#xa;santander.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="choco">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="choco"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="choco.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;choco.setContentAreaFilled(false);&#xa;choco.setPreferredSize(new Dimension(15,15));&#xa;choco.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="guajira">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="guajira"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="guajira.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;guajira.setContentAreaFilled(false);&#xa;guajira.setPreferredSize(new Dimension(15,15));&#xa;guajira.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="magdalena">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="magdalena"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="magdalena.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;magdalena.setContentAreaFilled(false);&#xa;magdalena.setPreferredSize(new Dimension(15,15));&#xa;magdalena.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="cesar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="cesar"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cesar.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cesar.setContentAreaFilled(false);&#xa;cesar.setPreferredSize(new Dimension(15,15));&#xa;cesar.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="amazonas">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="amazonas"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="amazonas.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;amazonas.setContentAreaFilled(false);&#xa;amazonas.setPreferredSize(new Dimension(30,30));&#xa;amazonas.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="antioquia">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="antioquia"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="antioquia.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;antioquia.setContentAreaFilled(false);&#xa;antioquia.setPreferredSize(new Dimension(15,15));&#xa;antioquia.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="cordoba">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="cordoba"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cordoba.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cordoba.setContentAreaFilled(false);&#xa;cordoba.setPreferredSize(new Dimension(15,15));&#xa;cordoba.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="cundinamarca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="cundinamarca"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cundinamarca.setIcon(new ImageIcon(&quot;src/resources/assets/target.png&quot;));&#xa;cundinamarca.setContentAreaFilled(false);&#xa;cundinamarca.setPreferredSize(new Dimension(15,15));&#xa;cundinamarca.setBorderPainted(false);"/>
-      </AuxValues>
-    </Component>
-  </SubComponents>
 </Form>

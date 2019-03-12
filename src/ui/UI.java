@@ -6,8 +6,10 @@
 package ui;
 
 import data.Department;
+import data.Player;
 import data.Region;
 import data.Unit;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -15,10 +17,14 @@ import java.util.HashMap;
  * @author Nicolás Moreno
  */
 public interface UI {
-    public int selectUnit();
+    public String selectUnit();
     public Department selectDepartment();
-    public void paintUnitInDepartment(Unit unit, Department department);
-
-    public void printMap(HashMap<String, Region> map);
+    public void printMap(HashMap<String,Department> departments);
+    public void printPlayerDepartments(ArrayList<Department> departments);
+    public void printPlayerStatus(Player player);
+    public String askForAction();
+    public void showUnitError();
+    public void showSuccessUnit();
+    public void showUnitDepartmentError();
     
 }

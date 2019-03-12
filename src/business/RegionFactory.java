@@ -17,11 +17,11 @@ public class RegionFactory {
     public static Region setUpAmazoniaRegion() {
         Region region = new Region();
         Department amazonas = new Department("Amazonas");
-        Department caqueta = new Department("Caquetá");
-        Department guainia = new Department("Guanía");
+        Department caqueta = new Department("Caqueta");
+        Department guainia = new Department("Guania");
         Department guaviare = new Department("Guaviare");
         Department putumayo = new Department("Putumayo");
-        Department vaupes = new Department("Vaupés");
+        Department vaupes = new Department("Vaupes");
         
         //Neighbours
         
@@ -148,7 +148,7 @@ public class RegionFactory {
         Department atlantico = new Department("Atlantico");
         Department bolivar = new Department("Bolivar");
         Department cesar = new Department("Cesar");
-        Department cordoba = new Department("Córdoba");
+        Department cordoba = new Department("Cordoba");
         Department guajira = new Department("Guajira");
         Department magdalena = new Department("Magdalena");
         Department sucre = new Department("Sucre");
@@ -208,9 +208,9 @@ public class RegionFactory {
     public static Region setUpOrinoquiaRegion() {
         Region region = new Region();
         Department arauca= new Department("Arauca");
-        Department casanare= new Department("Arauca");
-        Department meta= new Department("Arauca");
-        Department vichada= new Department("Arauca");
+        Department casanare= new Department("Casanare");
+        Department meta= new Department("Meta");
+        Department vichada= new Department("Vichada");
         
         
                  region.getDepartments().put(arauca.getName(),arauca);

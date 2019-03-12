@@ -13,11 +13,13 @@ public class Unit {
     private int armies;
     private Player owner;
     private String image;
+    private String name;
 
-    public Unit(int armies, Player owner, String image) {
+    public Unit(int armies, Player owner, String image, String name) {
         this.armies = armies;
         this.owner = owner;
         this.image = image;
+        this.name = name;
     }
 
 
@@ -27,6 +29,14 @@ public class Unit {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
     
     
