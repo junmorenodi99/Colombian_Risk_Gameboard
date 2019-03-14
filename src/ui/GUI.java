@@ -32,16 +32,16 @@ import org.netbeans.lib.awtextra.AbsoluteConstraints;
  *
  * @author Nicolas Moreno
  */
-public class GUI extends javax.swing.JFrame implements UI{
-    
-    private HashMap<String,Department> departments = new HashMap<>();
+public class GUI extends javax.swing.JFrame implements UI {
+
+    private HashMap<String, Department> departments = new HashMap<>();
     private ArrayList<DepartmentButton> departmentButtons = new ArrayList<>();
 
     /**
      * Creates new form GUI2
      */
     public GUI() {
-        
+
         try {
             //set look and feel
             UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
@@ -54,12 +54,12 @@ public class GUI extends javax.swing.JFrame implements UI{
         } catch (UnsupportedLookAndFeelException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         initComponents();
         initDepartments();
     }
-    
-    private void initDepartments(){
+
+    private void initDepartments() {
         guania = new DepartmentButton();
         guaviare = new DepartmentButton();
         huila = new DepartmentButton();
@@ -91,45 +91,44 @@ public class GUI extends javax.swing.JFrame implements UI{
         antioquia = new DepartmentButton();
         cordoba = new DepartmentButton();
         cundinamarca = new DepartmentButton();
-        
-        
-        setUpButton(guania,"Guania"); 
-        setUpButton(guaviare,"Guaviare");
-        setUpButton(huila,"Guila");
-        setUpButton(meta,"Meta");
-        setUpButton(narinio,"Nariño");
-        setUpButton(norte_santander,"Norte de Santander");
-        setUpButton(putumayo,"Putumayo");
-        setUpButton(quindio,"Quindio");
-        setUpButton(atlantico,"Atlantico");
-        setUpButton(risaralda,"Risaralda");
-        setUpButton(caqueta,"Caqueta");
-        setUpButton(arauca,"Arauca");
-        setUpButton(sucre,"Sucre");
-        setUpButton(bolivar,"Bolivar");
-        setUpButton(tolima,"Tolima");
-        setUpButton(boyaca,"Boyaca");
-        setUpButton(valle_cauca,"Valle");
-        setUpButton(caldas,"Caldas");
-        setUpButton(vaupes,"Vaupes");
-        setUpButton(casanare,"Casanare");
-        setUpButton(vichada,"Vichada");
-        setUpButton(cauca,"Cauca");
-        setUpButton(santander,"Santander");
-        setUpButton(choco,"Choco");
-        setUpButton(guajira,"Guajira");
-        setUpButton(magdalena,"Magdalena");
-        setUpButton(cesar,"Cesar");
-        setUpButton(amazonas,"Amazonas");
-        setUpButton(antioquia,"Antioquia");
-        setUpButton(cordoba,"Cordoba");
-        setUpButton(cundinamarca,"Cundinamarca");
-        
+
+        setUpButton(guania, "Guania");
+        setUpButton(guaviare, "Guaviare");
+        setUpButton(huila, "Guila");
+        setUpButton(meta, "Meta");
+        setUpButton(narinio, "Nariño");
+        setUpButton(norte_santander, "Norte de Santander");
+        setUpButton(putumayo, "Putumayo");
+        setUpButton(quindio, "Quindio");
+        setUpButton(atlantico, "Atlantico");
+        setUpButton(risaralda, "Risaralda");
+        setUpButton(caqueta, "Caqueta");
+        setUpButton(arauca, "Arauca");
+        setUpButton(sucre, "Sucre");
+        setUpButton(bolivar, "Bolivar");
+        setUpButton(tolima, "Tolima");
+        setUpButton(boyaca, "Boyaca");
+        setUpButton(valle_cauca, "Valle");
+        setUpButton(caldas, "Caldas");
+        setUpButton(vaupes, "Vaupes");
+        setUpButton(casanare, "Casanare");
+        setUpButton(vichada, "Vichada");
+        setUpButton(cauca, "Cauca");
+        setUpButton(santander, "Santander");
+        setUpButton(choco, "Choco");
+        setUpButton(guajira, "Guajira");
+        setUpButton(magdalena, "Magdalena");
+        setUpButton(cesar, "Cesar");
+        setUpButton(amazonas, "Amazonas");
+        setUpButton(antioquia, "Antioquia");
+        setUpButton(cordoba, "Cordoba");
+        setUpButton(cundinamarca, "Cundinamarca");
+
         updateDepartmentButtonsAction("default");
         locateDepartments();
     }
-    
-    private void locateDepartments(){
+
+    private void locateDepartments() {
         scenaryPanel.add(amazonas, new AbsoluteConstraints(273, 513, -1, -1));
         scenaryPanel.add(antioquia, new AbsoluteConstraints(129, 213, -1, -1));
         scenaryPanel.add(arauca, new AbsoluteConstraints(280, 208, -1, -1));
@@ -162,24 +161,24 @@ public class GUI extends javax.swing.JFrame implements UI{
         scenaryPanel.add(vaupes, new AbsoluteConstraints(307, 427, -1, -1));
         scenaryPanel.add(vichada, new AbsoluteConstraints(351, 281, -1, -1));
     }
-    
-    private void setUpButton(DepartmentButton button, String name){
+
+    private void setUpButton(DepartmentButton button, String name) {
         button.setIcon(new ImageIcon("src/resources/assets/target.png"));
         button.setContentAreaFilled(false);
-        button.setPreferredSize(new Dimension(15,15));
+        button.setPreferredSize(new Dimension(15, 15));
         button.setBorderPainted(false);
         button.setDepartmentName(name);
         departmentButtons.add(button);
-        
+
     }
-    
-    private void updateDepartmentButtonsAction(String mode){
-        for(DepartmentButton button : departmentButtons){
-            if(button.getActionListeners().length>0){
+
+    private void updateDepartmentButtonsAction(String mode) {
+        for (DepartmentButton button : departmentButtons) {
+            if (button.getActionListeners().length > 0) {
                 button.removeActionListener(button.getActionListeners()[0]);
             }
-            
-            if("default".equals(mode)){
+
+            if ("default".equals(mode)) {
                 button.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -188,7 +187,7 @@ public class GUI extends javax.swing.JFrame implements UI{
                     }
                 });
             }
-            if("target".equals(mode)){
+            if ("target".equals(mode)) {
                 button.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -199,41 +198,39 @@ public class GUI extends javax.swing.JFrame implements UI{
                 });
             }
         }
-        
-        
+
     }
-    
-    private void showDepartmentInfo(Department department){
-       dNameLabel.setText(department.getName());
-       dOwnerLabel.setText(department.getOwner().getFaction());
-       
-       int soldierNumber =0;
-       int horseNumber = 0;
-       int tankNumber = 0;
-       
-       int totalArmies=0;
-       
-       for(Unit unit : department.getUnits()){
-           switch(unit.getName()){
-               case "soldier":
-                   soldierNumber ++;
-                   break;
-               case "tank":
-                   tankNumber ++;
-                   break;
-               case "horse":
-                   horseNumber ++;
-                   break;   
-           }
-           totalArmies += unit.getArmies();
-       }
-       dArmyLabel.setText(String.valueOf(totalArmies));
-       SONumberLabel.setText(String.valueOf(soldierNumber));
-       CANumberLabel.setText(String.valueOf(horseNumber));
-       TANumberLabel.setText(String.valueOf(tankNumber));
-       
-   }
- 
+
+    private void showDepartmentInfo(Department department) {
+        dNameLabel.setText(department.getName());
+        dOwnerLabel.setText(department.getOwner().getFaction());
+
+        int soldierNumber = 0;
+        int horseNumber = 0;
+        int tankNumber = 0;
+
+        int totalArmies = 0;
+
+        for (Unit unit : department.getUnits()) {
+            switch (unit.getName()) {
+                case "soldier":
+                    soldierNumber++;
+                    break;
+                case "tank":
+                    tankNumber++;
+                    break;
+                case "horse":
+                    horseNumber++;
+                    break;
+            }
+            totalArmies += unit.getArmies();
+        }
+        dArmyLabel.setText(String.valueOf(totalArmies));
+        SONumberLabel.setText(String.valueOf(soldierNumber));
+        CANumberLabel.setText(String.valueOf(horseNumber));
+        TANumberLabel.setText(String.valueOf(tankNumber));
+
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -671,7 +668,6 @@ public class GUI extends javax.swing.JFrame implements UI{
     /**
      * @param args the command line arguments
      */
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CANumberLabel;
@@ -711,9 +707,7 @@ public class GUI extends javax.swing.JFrame implements UI{
     private javax.swing.JPanel unitPanel;
     // End of variables declaration//GEN-END:variables
 
-    
     //custom Swing elements
-    
     private DepartmentButton amazonas;
     private DepartmentButton antioquia;
     private DepartmentButton arauca;
@@ -745,26 +739,23 @@ public class GUI extends javax.swing.JFrame implements UI{
     private DepartmentButton valle_cauca;
     private DepartmentButton vaupes;
     private DepartmentButton vichada;
-    
+
     private ArrayList<JButton> actionButtons = new ArrayList<>();
     private ArrayList<JButton> unitButtons = new ArrayList<>();
-    
+
     private String action;
     private String selectedUnit;
     private Department targetDepartment;
-    
-    
-    
-    
+
     @Override
     public String selectUnit() {
-         JOptionPane.showMessageDialog(null,
-                "Por favor seleccione el tipo de unidad a colocar","Information",
+        JOptionPane.showMessageDialog(null,
+                "Por favor seleccione el tipo de unidad a colocar", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
-         changeUnitButtonsStatus(true);
-         while(selectedUnit == null){
-             sleep();
-         }
+        changeUnitButtonsStatus(true);
+        while (selectedUnit == null) {
+            sleep();
+        }
         changeUnitButtonsStatus(false);
         String value = String.valueOf(selectedUnit);
         selectedUnit = null;
@@ -774,15 +765,15 @@ public class GUI extends javax.swing.JFrame implements UI{
     @Override
     public Department selectDepartment() {
         JOptionPane.showMessageDialog(null,
-                "Por favor seleccione el departamento a coloar la unidad","Information",
+                "Por favor seleccione el departamento a coloar la unidad", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
         return targetDepartment();
     }
-    
+
     @Override
     public Department selectAttackerDepartment() {
         JOptionPane.showMessageDialog(null,
-                "Por favor seleccione el departamento desde el cual desea atacar","Information",
+                "Por favor seleccione el departamento desde el cual desea atacar", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
         return targetDepartment();
     }
@@ -790,34 +781,33 @@ public class GUI extends javax.swing.JFrame implements UI{
     @Override
     public Department selectTargetDepartment() {
         JOptionPane.showMessageDialog(null,
-                "Por favor seleccione el departamento al que desea atacar","Information",
+                "Por favor seleccione el departamento al que desea atacar", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
         return targetDepartment();
     }
 
     @Override
-    public void printMap(HashMap<String,Department> departments) {
+    public void printMap(HashMap<String, Department> departments) {
         this.departments = departments;
-        
+
         this.setSize(660, 750);
-        
+
         MapPanel colombiaMap = new MapPanel();
         scenaryPanel.add(colombiaMap, new AbsoluteConstraints(0, 0, 450, 640));
         scenaryPanel.setSize(this.getSize());
-        
+
         this.add(scenaryPanel);
         scenaryPanel.setVisible(true);
         changeUnitButtonsStatus(false);
         this.setLocation(450, WIDTH);
         this.setVisible(true);
-        
+
     }
-    
-                  
+
     @Override
     public void printPlayerDepartments(ArrayList<Department> departments) {
         StringBuilder info = new StringBuilder();
-        for(Department department : departments){
+        for (Department department : departments) {
             info.append(department.getName() + "|");
         }
         oTerritoriesLabel.setText(info.toString());
@@ -825,14 +815,14 @@ public class GUI extends javax.swing.JFrame implements UI{
 
     @Override
     public void printPlayerStatus(Player player) {
-        nAvaliableArmiesLabel.setText(String.valueOf(player.getAvaliableArmies()));   
+        nAvaliableArmiesLabel.setText(String.valueOf(player.getAvaliableArmies()));
         factionLabel.setText(player.getFaction());
     }
 
     @Override
     public String askForAction() {
         changeActionButtonsStatus(true);
-        while(action==null){
+        while (action == null) {
             sleep();
         }
         changeActionButtonsStatus(false);
@@ -840,10 +830,10 @@ public class GUI extends javax.swing.JFrame implements UI{
         action = null;
         return value;
     }
-    
-    private Department targetDepartment(){
+
+    private Department targetDepartment() {
         updateDepartmentButtonsAction("target");
-        while(targetDepartment == null){
+        while (targetDepartment == null) {
             sleep();
         }
         Department selectedDepartment = targetDepartment;
@@ -851,20 +841,20 @@ public class GUI extends javax.swing.JFrame implements UI{
         updateDepartmentButtonsAction("default");
         return selectedDepartment;
     }
-    
-    private void changeActionButtonsStatus(Boolean status){
-        actionButtons.forEach((button)->{
+
+    private void changeActionButtonsStatus(Boolean status) {
+        actionButtons.forEach((button) -> {
             button.setEnabled(status);
         });
     }
-    
-    private void changeUnitButtonsStatus(Boolean status){
-        unitButtons.forEach((button)->{
+
+    private void changeUnitButtonsStatus(Boolean status) {
+        unitButtons.forEach((button) -> {
             button.setEnabled(status);
         });
     }
-    
-    private void sleep(){
+
+    private void sleep() {
         try {
             Thread.sleep(500);
         } catch (InterruptedException ex) {
@@ -875,48 +865,47 @@ public class GUI extends javax.swing.JFrame implements UI{
     @Override
     public void showUnitError() {
         JOptionPane.showMessageDialog(null,
-                "Ejercitos insuficientes","Error",
+                "Ejercitos insuficientes", "Error",
                 JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
     public void showSuccessUnit() {
         JOptionPane.showMessageDialog(null,
-                "Unidad creada con exito","Information",
+                "Unidad creada con exito", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override
     public void showUnitDepartmentError() {
         JOptionPane.showMessageDialog(null,
-                "El departamento seleccionado no esvalido","Information",
+                "El departamento seleccionado no esvalido", "Information",
                 JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
     public void printError(String errorMessage) {
         JOptionPane.showMessageDialog(null,
-                errorMessage,"Error",
+                errorMessage, "Error",
                 JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
     public void printMessage(String message) {
         JOptionPane.showMessageDialog(null,
-                message,"Information",
+                message, "Information",
                 JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override
     public void printWinner(Player player) {
         JOptionPane.showMessageDialog(null,
-                "Felicidades, la faccion: " + player.getFaction()+" ha Ganado!!","Information",
+                "Felicidades, la faccion: " + player.getFaction() + " ha Ganado!!", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
     }
-    
-    
-    public class DepartmentButton extends JButton{
-    
+
+    public class DepartmentButton extends JButton {
+
         private String departmentName;
 
         public String getDepartmentName() {
@@ -926,22 +915,21 @@ public class GUI extends javax.swing.JFrame implements UI{
         public void setDepartmentName(String departmentName) {
             this.departmentName = departmentName;
         }
-        
-        
-        
+
     }
-    
-    public class MapPanel extends JPanel{
+
+    public class MapPanel extends JPanel {
+
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             try {
-                Image colombiaMap =  ImageIO.read(new File("src/resources/country/Colombia2.png"));
+                Image colombiaMap = ImageIO.read(new File("src/resources/country/Colombia2.png"));
                 g.drawImage(colombiaMap, 0, 0, null);
             } catch (IOException ex) {
                 Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
+
         }
     }
 }
