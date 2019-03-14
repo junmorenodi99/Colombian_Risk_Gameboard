@@ -6,6 +6,7 @@
 package business;
 
 import java.io.File;
+import javafx.embed.swing.JFXPanel;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -14,6 +15,8 @@ import javafx.scene.media.MediaPlayer;
  * @author Nicolas Moreno
  */
 public class MusicThread implements Runnable{
+    
+    private JFXPanel fxPanel = new JFXPanel();
 
     @Override
     public void run() {

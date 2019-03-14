@@ -28,8 +28,6 @@ import ui.UI;
  */
 public class GameEngine {
     
-    private static JFXPanel fxPanel = new JFXPanel();
-
     private static ArrayList<Player> players = new ArrayList<>();
 
     private static HashMap<String, Region> map = new HashMap<>();
