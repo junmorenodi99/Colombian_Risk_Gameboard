@@ -276,6 +276,10 @@ public class GUI extends javax.swing.JFrame implements UI {
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         nAvaliableArmiesLabel = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        MenuPrincipal = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout mainMenuPanelLayout = new javax.swing.GroupLayout(mainMenuPanel);
         mainMenuPanel.setLayout(mainMenuPanelLayout);
@@ -474,7 +478,7 @@ public class GUI extends javax.swing.JFrame implements UI {
             .addGroup(infoPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(infoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(32, Short.MAX_VALUE))
@@ -621,6 +625,33 @@ public class GUI extends javax.swing.JFrame implements UI {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        MenuPrincipal.setText("Menu");
+        MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuPrincipalActionPerformed(evt);
+            }
+        });
+
+        jMenuItem1.setText("Acerca de");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        MenuPrincipal.add(jMenuItem1);
+
+        jMenuItem2.setText("Salir");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        MenuPrincipal.add(jMenuItem2);
+
+        jMenuBar1.add(MenuPrincipal);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -629,7 +660,7 @@ public class GUI extends javax.swing.JFrame implements UI {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 511, Short.MAX_VALUE)
+            .addGap(0, 489, Short.MAX_VALUE)
         );
 
         pack();
@@ -665,12 +696,30 @@ public class GUI extends javax.swing.JFrame implements UI {
         selectedUnit = "horse";
     }//GEN-LAST:event_putHorseButtonActionPerformed
 
+    private void MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPrincipalActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_MenuPrincipalActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,
+                "Desarrollado por: \n Juan Nicolas Moreno Dimate", "Information",
+                JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CANumberLabel;
+    private javax.swing.JMenu MenuPrincipal;
     private javax.swing.JLabel SONumberLabel;
     private javax.swing.JLabel TANumberLabel;
     private javax.swing.JPanel actionPanel;
@@ -691,6 +740,9 @@ public class GUI extends javax.swing.JFrame implements UI {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -765,7 +817,7 @@ public class GUI extends javax.swing.JFrame implements UI {
     @Override
     public Department selectDepartment() {
         JOptionPane.showMessageDialog(null,
-                "Por favor seleccione el departamento a coloar la unidad", "Information",
+                "Por favor seleccione el departamento a colocar la unidad", "Information",
                 JOptionPane.INFORMATION_MESSAGE);
         return targetDepartment();
     }
@@ -800,6 +852,7 @@ public class GUI extends javax.swing.JFrame implements UI {
         scenaryPanel.setVisible(true);
         changeUnitButtonsStatus(false);
         this.setLocation(450, WIDTH);
+        this.setResizable(false);
         this.setVisible(true);
 
     }
