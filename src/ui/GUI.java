@@ -278,10 +278,13 @@ public class GUI extends javax.swing.JFrame implements UI{
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
+        scenaryPanel.setBackground(new java.awt.Color(255, 255, 255));
         scenaryPanel.setSize(new java.awt.Dimension(600, 750));
         scenaryPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        infoPanel.setBackground(new java.awt.Color(0, 204, 51));
+        infoPanel.setBackground(new java.awt.Color(255, 255, 204));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setText("Departamento");
 
@@ -306,31 +309,34 @@ public class GUI extends javax.swing.JFrame implements UI{
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(SONumberLabel)
                             .addComponent(jLabel6))
-                        .addGap(40, 40, 40)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(CANumberLabel)
-                            .addComponent(jLabel7))
-                        .addGap(54, 54, 54)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addComponent(CANumberLabel)
+                                .addGap(54, 54, 54))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel7)
+                                .addGap(45, 45, 45)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
                             .addComponent(TANumberLabel)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(dArmyLabel))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(dOwnerLabel))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addComponent(dNameLabel))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel2)))
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(dOwnerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -340,15 +346,17 @@ public class GUI extends javax.swing.JFrame implements UI{
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dNameLabel)
-                .addGap(42, 42, 42)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(dOwnerLabel)
                 .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(dOwnerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(dArmyLabel))
-                .addGap(43, 43, 43)
+                .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7)
@@ -358,8 +366,10 @@ public class GUI extends javax.swing.JFrame implements UI{
                     .addComponent(SONumberLabel)
                     .addComponent(CANumberLabel)
                     .addComponent(TANumberLabel))
-                .addContainerGap())
+                .addGap(46, 46, 46))
         );
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setText("Territorios Conquistados");
 
@@ -388,9 +398,11 @@ public class GUI extends javax.swing.JFrame implements UI{
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel5.setText("Acciones");
 
@@ -447,7 +459,7 @@ public class GUI extends javax.swing.JFrame implements UI{
                 .addComponent(putUnitButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(endTurnButton)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         actionButtons.add(attackButton);
@@ -470,25 +482,23 @@ public class GUI extends javax.swing.JFrame implements UI{
             infoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(infoPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         scenaryPanel.add(infoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 180, 630));
 
-        actionPanel.setBackground(new java.awt.Color(204, 102, 255));
+        actionPanel.setBackground(new java.awt.Color(255, 255, 204));
 
         factionNameLabel.setText("Turno de Faccion:");
 
-        factionLabel.setText("jLabel9");
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setText("Ejercitos Disponibles:");
-
-        nAvaliableArmiesLabel.setText("jLabel11");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -504,12 +514,14 @@ public class GUI extends javax.swing.JFrame implements UI{
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(nAvaliableArmiesLabel))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(22, 22, 22))
         );
+
+        unitPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         putSoldierButton.setFont(new java.awt.Font("Lucida Grande", 0, 10)); // NOI18N
         putSoldierButton.setText("SO");
@@ -579,21 +591,20 @@ public class GUI extends javax.swing.JFrame implements UI{
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(unitPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
         actionPanelLayout.setVerticalGroup(
             actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(actionPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(unitPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(actionPanelLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, actionPanelLayout.createSequentialGroup()
                         .addComponent(factionNameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(factionLabel)
-                        .addGap(0, 30, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(factionLabel))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         scenaryPanel.add(actionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 640, 640, 80));
@@ -775,10 +786,10 @@ public class GUI extends javax.swing.JFrame implements UI{
     public void printMap(HashMap<String,Department> departments) {
         this.departments = departments;
         
-        this.setSize(650, 750);
+        this.setSize(680, 750);
         
         MapPanel colombiaMap = new MapPanel();
-        scenaryPanel.add(colombiaMap, new AbsoluteConstraints(0, 0, 600, 640));
+        scenaryPanel.add(colombiaMap, new AbsoluteConstraints(0, 0, 450, 640));
         scenaryPanel.setSize(this.getSize());
         
         this.add(scenaryPanel);
