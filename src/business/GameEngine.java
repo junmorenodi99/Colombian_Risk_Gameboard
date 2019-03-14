@@ -51,8 +51,8 @@ public class GameEngine {
         //set players
         players.add(new Player());
         players.add(new Player());
-        players.get(0).setFaction("Spain");
-        players.get(1).setFaction("Colony");
+        players.get(0).setFaction("España");
+        players.get(1).setFaction("Colonia");
         //set regions 
         setUpRegions();
         //set departments 
