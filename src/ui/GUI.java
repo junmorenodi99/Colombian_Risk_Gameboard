@@ -31,7 +31,7 @@ import org.netbeans.lib.awtextra.AbsoluteConstraints;
 
 /**
  *
- * @author mordreth
+ * @author Nicolas Moreno
  */
 public class GUI extends javax.swing.JFrame implements UI{
     
@@ -752,14 +752,23 @@ public class GUI extends javax.swing.JFrame implements UI{
         JOptionPane.showMessageDialog(null,
                 "Por favor seleccione el departamento a coloar la unidad","Information",
                 JOptionPane.INFORMATION_MESSAGE);
-        updateDepartmentButtonsAction("target");
-        while(targetDepartment == null){
-            sleep();
-        }
-        Department selectedDepartment = targetDepartment;
-        targetDepartment = null;
-        updateDepartmentButtonsAction("default");
-        return selectedDepartment;
+        return targetDepartment();
+    }
+    
+    @Override
+    public Department selectAttackerDepartment() {
+        JOptionPane.showMessageDialog(null,
+                "Por favor seleccione el departamento desde el cual desea atacar","Information",
+                JOptionPane.INFORMATION_MESSAGE);
+        return targetDepartment();
+    }
+
+    @Override
+    public Department selectTargetDepartment() {
+        JOptionPane.showMessageDialog(null,
+                "Por favor seleccione el departamento al que desea atacar","Information",
+                JOptionPane.INFORMATION_MESSAGE);
+        return targetDepartment();
     }
 
     @Override
@@ -792,6 +801,7 @@ public class GUI extends javax.swing.JFrame implements UI{
     @Override
     public void printPlayerStatus(Player player) {
         nAvaliableArmiesLabel.setText(String.valueOf(player.getAvaliableArmies()));   
+        factionLabel.setText(player.getFaction());
     }
 
     @Override
@@ -804,6 +814,17 @@ public class GUI extends javax.swing.JFrame implements UI{
         String value = String.valueOf(action);
         action = null;
         return value;
+    }
+    
+    private Department targetDepartment(){
+        updateDepartmentButtonsAction("target");
+        while(targetDepartment == null){
+            sleep();
+        }
+        Department selectedDepartment = targetDepartment;
+        targetDepartment = null;
+        updateDepartmentButtonsAction("default");
+        return selectedDepartment;
     }
     
     private void changeActionButtonsStatus(Boolean status){
@@ -830,7 +851,7 @@ public class GUI extends javax.swing.JFrame implements UI{
     public void showUnitError() {
         JOptionPane.showMessageDialog(null,
                 "Ejercitos insuficientes","Error",
-                JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
@@ -844,6 +865,27 @@ public class GUI extends javax.swing.JFrame implements UI{
     public void showUnitDepartmentError() {
         JOptionPane.showMessageDialog(null,
                 "El departamento seleccionado no esvalido","Information",
+                JOptionPane.ERROR_MESSAGE);
+    }
+
+    @Override
+    public void printError(String errorMessage) {
+        JOptionPane.showMessageDialog(null,
+                errorMessage,"Error",
+                JOptionPane.ERROR_MESSAGE);
+    }
+
+    @Override
+    public void printMessage(String message) {
+        JOptionPane.showMessageDialog(null,
+                message,"Information",
+                JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    @Override
+    public void printWinner(Player player) {
+        JOptionPane.showMessageDialog(null,
+                "Felicidades, la faccion: " + player.getFaction()+" ha Ganado!!","Information",
                 JOptionPane.INFORMATION_MESSAGE);
     }
     

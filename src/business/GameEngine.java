@@ -29,8 +29,11 @@ public class GameEngine {
     private static HashMap<String,Region> map = new HashMap<>();
     private static HashMap<String,Department> allDepartments = new HashMap<>();
     
+    
     private static int initialArmies = 40;
     private static int initialDepartmentsByPlayer = 16;
+    
+    private static int turnNumber = 1;
     
     
     private static UI ui;
@@ -48,8 +51,8 @@ public class GameEngine {
         //set players
         players.add(new Player());
         players.add(new Player());
-        players.get(0).setFaction("Red");
-        players.get(1).setFaction("Blue");
+        players.get(0).setFaction("Spain");
+        players.get(1).setFaction("Colony");
         //set regions 
         setUpRegions();
         //set departments 
@@ -102,8 +105,10 @@ public class GameEngine {
         ui.printMap(allDepartments);
         
         
-        Player player = players.get(0);
-        //ciclo de turnos
+        
+        
+        while(verifyWinner()==null){
+            Player player = players.get(turnNumber%2);
         ui.printPlayerDepartments(player.getOccupedCountries());
         player.setAvaliableArmies(calculateNumberArmiesToSetUp(player));
         ui.printPlayerStatus(player);
@@ -111,22 +116,28 @@ public class GameEngine {
         //wait for action
         Boolean endTurn = false;
         do{
+            ui.printPlayerStatus(player);
             String action = ui.askForAction();
             switch(action){
                 case "attack":
-                    System.out.println("Attack");
+                    if(turnNumber<3){
+                        ui.printError("No se puede atacar en el primer turno");
+                    }else{
+                        attackDepartment(ui.selectAttackerDepartment(),ui.selectTargetDepartment(),player);
+                    }
                     break;
                 case "putUnits":
-                    System.out.println("Create Units");
                     putUnit(player, ui.selectUnit());
                     break;
                 case "endTurn":
-                    System.out.println("End Turn");
                     endTurn = true;
                     break;
             }
             ui.printPlayerStatus(player);
         }while(!endTurn);
+        turnNumber+=1;
+        }
+       
         
     }
     
@@ -149,14 +160,13 @@ public class GameEngine {
             return false;
         }
         
-        
-        player.setAvaliableArmies(player.getAvaliableArmies()-unitValue);
         Department departmentToPut = ui.selectDepartment();
         
         if(!player.equals(departmentToPut.getOwner())){
             ui.showUnitDepartmentError();
             return false;
         }
+        player.setAvaliableArmies(player.getAvaliableArmies()-unitValue);
         
         departmentToPut.getUnits().add(new Unit(unitValue, player, "",unitToPut));
         ui.showSuccessUnit();
@@ -164,7 +174,114 @@ public class GameEngine {
     }
     
     private static int calculateNumberArmiesToSetUp(Player player){
+        if(turnNumber<3){
+            return player.getOccupedCountries().size()+10;
+        }
         return player.getOccupedCountries().size();
+    }
+
+    private static void attackDepartment(Department selectedAttackerDepartment, Department selectedTargetDepartment, Player turnPlayer) {
+        
+        if(!selectedAttackerDepartment.getOwner().equals(turnPlayer)){
+            ui.printError("No se puede atacar desde un territorio no conquistado");
+            return;
+        }    
+        
+        if(selectedAttackerDepartment.getName().equals(selectedTargetDepartment.getName())){
+            ui.printError("No se puede atacar el mismo departamento");
+            return;
+        }
+        
+        int attackerArmies = 0;
+        for(Unit unit : selectedAttackerDepartment.getUnits()){
+            attackerArmies += unit.getArmies();
+        }
+        
+        if (attackerArmies<=1){
+            ui.printError("No se puede atacar con menos de dos ejercitos");
+            return;
+        }
+        
+        /*
+        if(selectedAttackerDepartment.getNeighbours().get(selectedTargetDepartment.getName())==null){
+            ui.printError("Solo se pueden atacar territorios aledaños");
+            return;
+        }*/
+        
+        if(selectedAttackerDepartment.getOwner().equals(selectedTargetDepartment.getOwner())){
+            ui.printError("Solo se pueden atacar territorios enemigos");
+            return;
+        }
+        
+        int ownerArmies = calculateArmies(selectedAttackerDepartment);
+        int targetArmies = calculateArmies(selectedAttackerDepartment);
+        
+        Random random = new Random();
+        if(random.nextBoolean()){
+            int enemyAliveArmies = targetArmies-ownerArmies;
+            if(enemyAliveArmies<=0){
+                //territorio capturado
+                selectedTargetDepartment.getOwner().getOccupedCountries().remove(selectedTargetDepartment);
+                selectedTargetDepartment.setOwner(selectedAttackerDepartment.getOwner());
+                regroupArmies(selectedTargetDepartment,1);
+                selectedAttackerDepartment.getOwner().getOccupedCountries().add(selectedTargetDepartment);
+                ui.printMessage("El territorio ha sido capturado con exito");
+            }else{
+                regroupArmies(selectedTargetDepartment,enemyAliveArmies);
+                ui.printMessage("El enemigo ha pertido la batalla pero conserva el territorio");
+            }
+            
+        }else{
+            int aliveArmies = ownerArmies-targetArmies;
+            if(aliveArmies<=0){
+                ui.printMessage("El enemigo gana la batalla, perdiste todos los ejercitos del territorio");
+                regroupArmies(selectedAttackerDepartment,1);
+            }else{
+                regroupArmies(selectedAttackerDepartment,aliveArmies);
+                ui.printMessage("El enemigo gana la batalla");
+            }      
+            
+        }
+        
+    }
+
+    private static int calculateArmies(Department department) {
+        int totalArmies = 0;
+        for(Unit unit : department.getUnits()){
+            totalArmies += unit.getArmies();
+        }
+        return totalArmies;
+    }
+
+    private static ArrayList<Unit> regroupArmies(Department department, int armies) {
+        ArrayList<Unit> units = new ArrayList<>();
+        
+        int numberOfTanks = armies/10;
+        int numberOfHorses = numberOfTanks/5;
+        int numberOfSoldiers = armies - (numberOfTanks+numberOfHorses);
+        
+        for(int index = 0; index < numberOfTanks;index ++){
+            units.add(new Unit(10,department.getOwner(),"","tank"));
+        }
+        for(int index = 0; index < numberOfHorses;index ++){
+            units.add(new Unit(5,department.getOwner(),"","horse"));
+        }
+        for(int index = 0; index < numberOfSoldiers;index ++){
+            units.add(new Unit(1,department.getOwner(),"","soldier"));
+        }
+        department.setUnits(units);
+        return units;
+    }
+    
+    public static Player verifyWinner(){
+        if(players.get(0).getOccupedCountries().size()<=0){
+            ui.printWinner(players.get(1));
+            return players.get(1);
+        }else if(players.get(1).getOccupedCountries().size()<=0){
+            ui.printWinner(players.get(0));
+            return players.get(0);
+        }
+        return null;
     }
     
 }

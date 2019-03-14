@@ -26,5 +26,11 @@ public interface UI {
     public void showUnitError();
     public void showSuccessUnit();
     public void showUnitDepartmentError();
+    public Department selectAttackerDepartment();
+    public Department selectTargetDepartment();
+    public void printError(String errorMessage);
+    public void printMessage(String message);
+
+    public void printWinner(Player player);
     
 }
